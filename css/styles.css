@@ -81,6 +81,11 @@ main {
   background-color: hsl(263, 55%, 52%);
   color: hsl(0, 0%, 100%);
 }
+.testimonials-card__1 .testimonials-cards__profile img {
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(264, 82%, 70%);
+}
 .testimonials-card__1 .testimonials-cards__heading {
   position: relative;
   z-index: 3;
@@ -104,6 +109,11 @@ main {
 .testimonials-card__4 {
   background-color: hsl(219, 29%, 14%);
   color: hsl(0, 0%, 100%);
+}
+.testimonials-card__4 .testimonials-cards__profile img {
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(264, 82%, 70%);
 }
 
 @media (min-width: 68.75rem) {

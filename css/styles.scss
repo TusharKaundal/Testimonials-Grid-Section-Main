@@ -90,6 +90,13 @@ main{
     position: relative;
     background-color: $moderate-violet;
     color: $white;
+    .testimonials-cards__profile{
+        img{
+            border-width: 2px;
+            border-style: solid;
+            border-color: $light-moderate-violet;
+        }
+    }
     .testimonials-cards__heading{
         position: relative;
         z-index: 3;
@@ -111,6 +118,13 @@ main{
 .testimonials-card__4{
     background-color: $very-dark-blackish-blue;
     color: $white;
+    .testimonials-cards__profile{
+        img{
+            border-width: 2px;
+            border-style: solid;
+            border-color: $light-moderate-violet;
+        }
+    }
 }
 
 
