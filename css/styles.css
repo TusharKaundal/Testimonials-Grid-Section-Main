@@ -117,8 +117,11 @@ main {
 }
 
 @media (min-width: 68.75rem) {
+  main {
+    margin-top: 0;
+  }
   .testimonials {
-    grid-template-columns: repeat(4, 15.938rem);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
   .testimonials-card__1 {

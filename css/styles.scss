@@ -131,9 +131,11 @@ main{
 
 
 @media (min-width:pxToRem(1100px)) {
-    
+    main{
+        margin-top: 0;
+    }
     .testimonials{
-        grid-template-columns: repeat(4,pxToRem(255px)); 
+        grid-template-columns: repeat(4,1fr); 
         grid-template-rows: repeat(2,1fr);
     }
     
