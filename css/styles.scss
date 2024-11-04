@@ -34,8 +34,8 @@ body{
 }
 
 main{
-    margin-top: pxToRem(71px);
-    margin-inline: clamp(pxToRem(32px),20vw,pxToRem(200px));
+    margin-top: clamp(pxToRem(71px),10vw,pxToRem(86px));
+    margin-inline: clamp(pxToRem(32px),10vw,pxToRem(160px));
 }
 
 .testimonials{
@@ -128,9 +128,7 @@ main{
 }
 
 @media (min-width:pxToRem(1100px)) {
-    main{
-        margin-top: 0;
-    }
+    
     .testimonials{
         grid-template-columns: repeat(4,1fr); 
         grid-template-rows: repeat(2,1fr);
