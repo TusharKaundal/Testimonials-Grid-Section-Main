@@ -120,7 +120,9 @@ main{
     body{
         padding: 0 10rem;
     }
-   
+    main {
+        margin-top: pxToRem(21px);
+      }
     .testimonials{
         grid-template-columns: repeat(4,1fr); 
         grid-template-rows: repeat(2,1fr);
