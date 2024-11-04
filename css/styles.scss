@@ -35,12 +35,12 @@ body{
 
 main{
     margin-top: pxToRem(71px);
-    margin-inline: pxToRem(32px);
+    margin-inline: clamp(pxToRem(32px),5vw,pxToRem(160px));
 }
 
 .testimonials{
     display: grid;
-    gap: pxToRem(24px);
+    gap: pxToRem(32px);
 }
 
 .testimonials-card{
@@ -126,9 +126,6 @@ main{
         }
     }
 }
-
-
-
 
 @media (min-width:pxToRem(1100px)) {
     main{

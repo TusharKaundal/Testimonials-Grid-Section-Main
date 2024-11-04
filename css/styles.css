@@ -13,12 +13,12 @@ body {
 
 main {
   margin-top: 4.438rem;
-  margin-inline: 2rem;
+  margin-inline: clamp(2rem, 5vw, 10rem);
 }
 
 .testimonials {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .testimonials-card {
