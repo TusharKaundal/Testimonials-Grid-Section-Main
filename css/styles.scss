@@ -30,13 +30,15 @@ body{
     display: grid;
     justify-content: center;
     align-content: center;
-    background-color: #F2F2F2;
     gap: pxToRem(10px);
-    
+}
+
+main{
+    margin-top: pxToRem(71px);
+    margin-inline: pxToRem(32px);
 }
 
 .testimonials{
-    margin-top: pxToRem(80px);
     display: grid;
     gap: pxToRem(24px);
 }
@@ -44,38 +46,9 @@ body{
 .testimonials-card{
     padding-inline: pxToRem(30px);
     padding-block: pxToRem(26px);
-    width: pxToRem(327px);
     border-radius: pxToRem(8px);
     box-shadow: 0 10px 20px rgba(136, 165, 191, 0.48);
 }
-
-.testimonials-cards__heading{
-    @include fonts(600,20px,auto,0px);
-    margin-bottom: pxToRem(24px);
-}
-
-.testimonials-cards__body{
-    @include fonts(500,13px,19px,0px);
-    opacity: 0.7;
-}
-
-.testimonials-card__1{
-    background-color: $moderate-violet;
-    color: $white;
-}
-.testimonials-card__2{
-    background-color: $very-dark-grayish-blue;
-    color: $white;
-}
-.testimonials-card__3,
-.testimonials-card__5{
-    color: $very-dark-grayish-blue;
-}
-.testimonials-card__4{
-    background-color: $very-dark-blackish-blue;
-    color: $white;
-}
-
 
 .testimonials-cards__profile {
     display: grid;
@@ -103,18 +76,61 @@ body{
     margin-bottom: pxToRem(24px);
 }
 
-@media (min-width:pxToRem(1000px)) {
+.testimonials-cards__heading{
+    @include fonts(600,20px,auto,0px);
+    margin-bottom: pxToRem(24px);
+}
+
+.testimonials-cards__body{
+    @include fonts(500,13px,19px,0px);
+    opacity: 0.7;
+}
+
+.testimonials-card__1{
+    position: relative;
+    background-color: $moderate-violet;
+    color: $white;
+    .testimonials-cards__heading{
+        position: relative;
+        z-index: 3;
+    }
+    .testimonials-cards__coma{
+        position: absolute;
+        top: 0;
+        right: pxToRem(30px);
+    }
+}
+.testimonials-card__2{
+    background-color: $very-dark-grayish-blue;
+    color: $white;
+}
+.testimonials-card__3,
+.testimonials-card__5{
+    color: $very-dark-grayish-blue;
+}
+.testimonials-card__4{
+    background-color: $very-dark-blackish-blue;
+    color: $white;
+}
+
+
+
+
+@media (min-width:pxToRem(1444px)) {
+    body{
+        padding: 0 10rem;
+    }
    
     .testimonials{
-        margin-top:0;
-        grid-template-columns: repeat(4,pxToRem(255px));
-        
+        grid-template-columns: repeat(4,1fr); 
+        grid-template-rows: repeat(2,1fr);
     }
-    .testimonials-card{
-        width: 100%;
-    }
+    
     .testimonials-card__1{
         grid-column: 1/3;
+        .testimonials-cards__coma{
+            right: pxToRem(75px);
+        }
     }
 
     .testimonials-card__2{
@@ -130,5 +146,5 @@ body{
 
     .testimonials-card__5{
         grid-row: 1/3;
-    }
+    } 
 }
