@@ -35,7 +35,7 @@ body{
 
 main{
     margin-top: pxToRem(71px);
-    margin-inline: clamp(pxToRem(32px),5vw,pxToRem(160px));
+    margin-inline: clamp(pxToRem(32px),20vw,pxToRem(200px));
 }
 
 .testimonials{
