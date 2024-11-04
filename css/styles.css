@@ -106,15 +106,9 @@ main {
   color: hsl(0, 0%, 100%);
 }
 
-@media (min-width: 90.25rem) {
-  body {
-    padding: 0 10rem;
-  }
-  main {
-    margin-top: 1.313rem;
-  }
+@media (min-width: 68.75rem) {
   .testimonials {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 15.938rem);
     grid-template-rows: repeat(2, 1fr);
   }
   .testimonials-card__1 {

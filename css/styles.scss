@@ -116,15 +116,10 @@ main{
 
 
 
-@media (min-width:pxToRem(1444px)) {
-    body{
-        padding: 0 10rem;
-    }
-    main {
-        margin-top: pxToRem(21px);
-      }
+@media (min-width:pxToRem(1100px)) {
+    
     .testimonials{
-        grid-template-columns: repeat(4,1fr); 
+        grid-template-columns: repeat(4,pxToRem(255px)); 
         grid-template-rows: repeat(2,1fr);
     }
     
